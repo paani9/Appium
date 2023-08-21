@@ -21,7 +21,7 @@ public class TestCase01 {
 	AppiumDriverLocalService server=new AppiumServiceBuilder().withAppiumJS(f).withIPAddress("127.0.0.1").usingPort(4723).withTimeout(Duration.ofSeconds(300L)).build();
 	server.start();
 	DesiredCapabilities dc=new DesiredCapabilities();
-	//Identify specific device
+	//Identify specific devices
 	dc.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
 	dc.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 4 API 23");
 	dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
