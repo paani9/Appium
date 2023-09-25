@@ -17,7 +17,7 @@ public class MobileBrowserStack {
 	//https://<USERNAME>:<ACCESS_KEY>@hub.browserstack.com/wd/hub
 	@Test
 	public void mobileBrowser() throws Throwable {
-		System.out.println(url);
+		//System.out.println(url);
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME,"Vivo Y21");
 	     // dc.setCapability("os_version", "11")
